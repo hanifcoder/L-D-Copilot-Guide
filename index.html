@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L&D Copilot Guide — Canada Life</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #fff;
+      color: #333;
+    }
+    header {
+      background: #E0032B;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    main {
+      padding: 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 1.5rem;
+    }
+    .collapsible {
+      background-color: #E0032B;
+      color: white;
+      cursor: pointer;
+      padding: 1rem;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1.1rem;
+      border-radius: 4px;
+      margin-top: 0.5rem;
+    }
+    .active, .collapsible:hover {
+      background-color: #b00222;
+    }
+    .content {
+      padding: 0 1rem;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 0 0 6px 6px;
+    }
+    ul {
+      margin: 1rem 0;
+      padding-left: 1.2rem;
+    }
+    footer {
+      border-top: 2px solid #E0032B;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: #f9f9f9;
+    }
+    footer p {
+      margin: 0.3rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>L&D Copilot Guide</h1>
+    <p>Supporting Canada Life’s Learning & Development Division</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Welcome</h2>
+      <p>
+        This guide introduces how Learning & Development (L&D) professionals can use Microsoft Copilot to boost efficiency, creativity, 
+        and impact in training design and delivery. Explore the role-based prompt examples below.
+      </p>
+      <p><strong>Disclaimer:</strong> All examples are illustrative. Verify all Copilot outputs for compliance before publishing.</p>
+    </section>
+
+    <!-- Instructional Designers -->
+    <section>
+      <button class="collapsible">Instructional Designers — Prompt Examples</button>
+      <div class="content">
+        <ul>
+          <li>Create a five-step onboarding checklist for new employees.</li>
+          <li>Generate draft learning objectives for a compliance course.</li>
+          <li>Suggest interactive quiz formats for adult learners.</li>
+          <li>Summarize key points from a 10-page training manual.</li>
+          <li>Draft sample reflection questions for a leadership module.</li>
+          <li>Outline a storyboard for a 5-minute microlearning video.</li>
+          <li>Propose three alternative icebreaker activities.</li>
+          <li>Suggest inclusive language for course descriptions.</li>
+          <li>Create a feedback form with 10 Likert-scale items.</li>
+          <li>Design an outline for blended learning delivery.</li>
+          <li>Generate role-play scenarios for negotiation training.</li>
+          <li>Draft a short quiz for evaluating key concepts.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Facilitators -->
+    <section>
+      <button class="collapsible">Facilitators — Prompt Examples</button>
+      <div class="content">
+        <ul>
+          <li>Generate a 2-minute motivational opening script.</li>
+          <li>Provide talking points for introducing teamwork activities.</li>
+          <li>Summarize best practices for virtual classroom engagement.</li>
+          <li>Create a list of energizer activities for a 60-minute workshop.</li>
+          <li>Suggest phrasing for encouraging quiet participants.</li>
+          <li>Draft a wrap-up summary for a customer service module.</li>
+          <li>Provide sample responses to common learner questions.</li>
+          <li>Suggest debrief questions after a role-play activity.</li>
+          <li>Create a poll question to check knowledge mid-session.</li>
+          <li>Write facilitator notes for a scenario discussion.</li>
+          <li>Generate sample dialogue for handling difficult participants.</li>
+          <li>Provide closing remarks for a hybrid training session.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Learning Relationship Managers -->
+    <section>
+      <button class="collapsible">Learning Relationship Managers — Prompt Examples</button>
+      <div class="content">
+        <ul>
+          <li>Draft an email introducing new training opportunities.</li>
+          <li>Summarize feedback from multiple post-training surveys.</li>
+          <li>Create a report outline for quarterly L&D outcomes.</li>
+          <li>Generate talking points for stakeholder updates.</li>
+          <li>Provide an elevator pitch for the value of a new program.</li>
+          <li>Suggest strategies for aligning training with business goals.</li>
+          <li>Draft FAQs for a training initiative launch.</li>
+          <li>Create a sample agenda for a client consultation meeting.</li>
+          <li>Summarize trends in learner participation.</li>
+          <li>Draft a proposal outline for a leadership program.</li>
+          <li>Provide KPIs to measure training effectiveness.</li>
+          <li>Generate communication plan templates for rollouts.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>— Muhammad Hanif —</p>
+    <p>LLM Engineer & AI L&D Professional</p>
+  </footer>
+
+  <script>
+    // Collapsible Sections
+    const collapsibles = document.querySelectorAll(".collapsible");
+    collapsibles.forEach(btn => {
+      btn.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
